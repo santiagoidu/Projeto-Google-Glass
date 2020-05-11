@@ -13,10 +13,10 @@
 
 <p align="center">
   <img src="_interface/01-index.jpg" width="400px">
-  <img src="_interface/02-specs.jpg" width="400px">
+ <img src="_interface/05-fale-conosco.jpg" width="400px">
   <img src="_interface/03-fotos.jpg" width="400px">
   <img src="_interface/04-multimidia.jpg" width="400px">
-  <img src="_interface/05-fale-conosco.jpg" width="400px">
+  <img src="_interface/02-specs.jpg" width="400px">
 <br>
 <br>
 <h1 align="center">
@@ -24,7 +24,7 @@
   </h1>
 </p>
 
-**&copy; [CURSO EM VIDEO](https://github.com/cursoemvideo) | PATROCÍNIO [GOOGLE](https://about.google/)**
+**&copy; [CURSO EM VIDEO](https://github.com/cursoemvideo)**
 
 ## Licença
 
