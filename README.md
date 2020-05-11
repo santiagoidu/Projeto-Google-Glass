@@ -20,7 +20,7 @@
 <br>
 <br>
 <h1 align="center">
-   <img src="_img/pic13.png" width="1000px">  
+   <img src="_interface/pic13.png" width="1000px">  
   </h1>
 </p>
 
