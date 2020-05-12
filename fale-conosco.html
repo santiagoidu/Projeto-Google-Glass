@@ -65,8 +65,221 @@
                             maxlength="80" placeholder="AV, Rua, Trav..."></p>
                     <p><label for="cnum">Número:</label> <input type="number" name="tnum" id="cnum" min="0"
                             max="999999"></p>
-                    <p><label for="cest">Estado:</label></p>
-                    <p><label for="ccid">Cidade:</label></p>
+                    <p><label for="cest">Estado:</label>
+                        <select name="test" id="cest">
+                            <option value="Null" selected>-Selecione-</option>
+                            <optgroup label="Região Norte">
+                                <option value="AC">Acre</option>
+                                <option value="AP">Amapá </option>
+                                <option value="AM">Amazonas</option>
+                                <option value="PA">Pará</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="TO">Tocantins</option>
+                            </optgroup>
+                            <optgroup label="Região Nordeste">
+                                <option value="AL">Alagoas</option>                            
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="SE">Sergipe</option>
+                            </optgroup>
+                            <optgroup label="Região Centro-Oeste">
+                                <option value="DF">Distrito Federal</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                            </optgroup>
+                            <optgroup label="Região Sudeste">
+                                <option value="ES">Espírito Santo</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                            </optgroup>
+                            <optgroup label="Região Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                            </optgroup>                                                                                                     
+                        </select></p>
+                    <p><label for="ccid">Cidade: <input type="text" name="tcid" id="ccid" maxlength="40" size="20" placeholder="Sua cidade..."></label></p>
+                    <datalist id="cidades">
+                        <optgroup label="Região Norte">
+                            <optgroup label="Acre">
+                                <option value="Rio Branco"></option>
+                                <option value="Cruzeiro do Sul"></option>
+                                <option value="Sena Madureira"></option>
+                                <option value="Tarauacá"></option>
+                            </optgroup>
+                            
+                            <optgroup label="Amapá">
+                                <option value="Macapá"></option>
+                                <option value="Santana"></option>
+                                <option value="Laranjal do Jari"></option>
+                            </optgroup>
+
+                            <optgroup label="Amazonas">
+                                <option value="Manaus"></option>
+                                <option value="Parintins"></option>
+                                <option value="Itacoatiara"></option>
+                                <option value="Manacapuru"></option>
+                                <option value="Coari"></option>
+                                <option value="Tabatinga"></option>
+                                <option value="Maués"></option>
+                                <option value="Tefé"></option>
+                                <option value="Manicoré"></option>
+                                <option value="Humaitá"></option>
+                                <option value="Iranduba"></option>
+                                <option value="Lábrea"></option>
+                                <option value="São Gabriel da Cachoeira"></option>
+                                <option value="Benjamin Constant"></option>
+                                <option value="Borba"></option>
+                                <option value="Autazes"></option>
+                                <option value="São Paulo de Olivença"></option>
+                            </optgroup>
+
+                            <optgroup label="Pará">
+                                <option value="Belém"></option>
+                                <option value="Ananindeua"></option>
+                                <option value="Santarém"></option>
+                                <option value="Marabá"></option>
+                                <option value="Parauapebas"></option>
+                                <option value="Castanhal"></option>
+                                <option value="Abaetetuba"></option>
+                                <option value="Cametá"></option>
+                                <option value="Marituba"></option>
+                                <option value="São Félix do Xingu"></option>
+                                <option value="Bragança"></option>
+                                <option value="Barcarena"></option>
+                                <option value="Altamira"></option>
+                                <option value="Tucuruí"></option>
+                                <option value="Paragominas"></option>
+                                <option value="Tailândia"></option>
+                                <option value="Breves"></option>
+                                <option value="Itaituba"></option>
+                                <option value="Redenção"></option>
+                                <option value="Moju"></option>
+                                <option value="Novo Repartimento"></option>
+                                <option value="Oriximiná"></option>
+                                <option value="Santana do Araguaia"></option>
+                                <option value="Santa Izabel do Pará"></option>
+                                <option value="Capanema"></option>
+                                <option value="Breu Branco"></option>
+                                <option value="Ipixuna do Pará"></option>
+                                <option value="Tomé-Açu"></option>
+                                <option value="Benevides"></option>
+                                <option value="Igarapé-Miri"></option>
+                                <option value="Portel"></option>
+                                <option value="Viseu"></option>
+                                <option value="Dom Eliseu"></option>
+                                <option value="Ulianópolis"></option>
+                                <option value="Jacundá"></option>
+                                <option value="São Miguel do Guamá"></option>
+                                <option value="Monte Alegre"></option>
+                                <option value="Juruti"></option>
+                                <option value="Alenquer"></option>
+                                <option value="Capitão Poço"></option>
+                                <option value="Vigia"></option>
+                                <option value="Itupiranga"></option>
+                                <option value="Rondon do Pará"></option>
+                                <option value="Óbidos"></option>
+                                <option value="Rurópolis"></option>
+                                <option value="Conceição do Araguaia"></option>
+                                <option value="Pacajá"></option>
+                                <option value="Baião"></option>
+                                <option value="Augusto Corrêa"></option>
+                                <option value="Uruará"></option>
+                                <option value="Xinguara"></option>
+                                <option value="Porto de Moz"></option>
+                                <option value="Salinópolis"></option>
+                                <option value="Goianésia do Pará"></option>
+                                <option value="Muaná"></option>
+                                <option value="Curuçá"></option>
+                                <option value="Tucumã"></option>
+                                <option value="Afuá"></option>
+                                <option value="Igarapé-Açu"></option>
+                            </optgroup>
+
+                            <optgroup label="Rondônia">
+                                <option value="Porto Velho"></option>
+                                <option value="Ji-Paraná"></option>
+                                <option value="Ariquemes"></option>
+                                <option value="Vilhena"></option>
+                                <option value="Cacoal"></option>
+                                <option value="Rolim de Moura"></option>
+                                <option value="Jaru"></option>
+                                <option value="Guajará-Mirim"></option>
+                                <option value="Machadinho d'Oeste"></option>
+                                <option value="Buritis"></option>
+                            </optgroup>
+
+                            <optgroup label="Roraima">
+                                <option value="Boa Vista"></option>
+                            </optgroup>
+
+                            <optgroup label="Tocantins">
+                                <option value="Palmas"></option>
+                                <option value="Araguaína"></option>
+                                <option value="Parintins"></option>
+                                <option value="Tailândia"></option>
+                                <option value="Breves"></option>
+                                <option value="Gurupi"></option>
+                                <option value="Acará"></option>
+                                <option value="Porto Nacional"></option>
+                                <option value="Paraíso do Tocantins"></option>
+                            </optgroup>
+                        </optgroup>
+
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+
+                    </datalist>
                 </fieldset>
                 <fieldset id="mensagem">
                     <legend>Mensagem do Usuário</legend>
