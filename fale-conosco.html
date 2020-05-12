@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
 </head>
 <script src="_javascript/funcoes.js"></script>
+
 <body>
     <div id="interface">
         <header id="cabecalho">
@@ -16,58 +17,70 @@
                 <h1>Google Glass</h1>
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
-            <img id="icone" src="_imagens/contato.png"/>
+            <img id="icone" src="_imagens/contato.png" />
             <nav id="menu">
                 <h1> Menu Principal</h1>
                 <ul type="circle">
-                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
-                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"  onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
-                    <li onmouseover="mudaFoto('_imagens/fotos.png')"  onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"  onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')"  onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')">
+                        <a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a
+                            href="fale-conosco.html">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3>Fale Conosco > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Marco Tulio Santiago</h2>
+                    <h3 class="direita">Atualizado em 11/Maio/2020</h3>
+                </hgroup>
+            </header>
+            <form>
+                <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+                    <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="30" maxlength="30" placeholder="Digite seu nome completo"></p>
+                    <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="30" maxlength="12" placeholder="De 8 a 12 caracteres"></p>
+                    <p><label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="30" maxlength="40" placeholder="Digite seu e-mail"></p>
+                   <fieldset id="sexo"><legend>Sexo:</legend>
+                    <input type="radio" name="tsexo" id="cmasc" checked><label for="cmasc">Masculino</label><br>
+                    <input type="radio" name="tsexo" id="cfem"><label for="cfem">Feminino</label></fieldset>
+                    <p>Data de Nascimento: <input type="date" name="tnasc" id="cnasc"> </p>
+                </fieldset>
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                  <p>  Logradouro: <input type="text" name="trua" id="crua" size="13" maxlength="80">
+                  <p>  Número:
+                    Estado:
+                    Cidade:
+                </fieldset>
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                    Grau de Urgência:
+                    Mensagem:
+                </fieldset>
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                    Gostaria de adquirir um Google Glass quando disponível
+                    Cor:
+                    Quantidade:
+                    Preço Total: R$
+                </fieldset>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
-
-<footer id="rodape">
-    <p>Copyright &copy; 2013-2020 | Remade by SantiagoIDU! <br>
-        <a href="https://github.com/santiagoidu/" target="blank"> GitHub </a> |
-        <a href="https://www.instagram.com/marco_tulio_santiago_" target="blank">Instagram</a></p>
-</footer>
-</div>
+                [BOTÃO ENVIAR]
+            </form>
+            <footer id="rodape">
+                <p>Copyright &copy; 2013-2020 | Remade by SantiagoIDU! <br>
+                    <a href="https://github.com/santiagoidu/" target="blank"> GitHub </a> |
+                    <a href="https://www.instagram.com/marco_tulio_santiago_" target="blank">Instagram</a></p>
+            </footer>
+    </div>
 </body>
 
 </html>
