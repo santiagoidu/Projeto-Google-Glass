@@ -8,7 +8,7 @@
 </h4>
 
 <h2 align="center" style="font-family: 'Times New Roman', Times, serif;">
-  Tela dos Projetos
+  Interface do Site
 </h2>
 
 <p align="center">
