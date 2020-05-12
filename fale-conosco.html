@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="_css/form.css" />
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
 </head>
 <script src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        let qtd = Number(document.getElementById('cqtd').value);
+        tot = qtd * 1500;
+        document.getElementById('ctot').value = tot;
+    }
+</script>
 
 <body>
     <div id="interface">
@@ -40,10 +48,10 @@
                     <h3>Fale Conosco > Contato</h3>
                     <h1>Formulário de Contato</h1>
                     <h2>por Marco Tulio Santiago</h2>
-                    <h3 class="direita">Atualizado em 11/Maio/2020</h3>
+                    <h3 class="direita">Atualizado em 12/Maio/2020</h3>
                 </hgroup>
             </header>
-            <form method="post" id="fcontato" action="mailto:contato@cursoemvideo.com">
+            <form method="post" id="fcontato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
                 <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend>
                     <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="30"
@@ -61,8 +69,7 @@
                 </fieldset>
                 <fieldset id="endereco">
                     <legend>Endereço do Usuário</legend>
-                    <p><label for="crua">Logradouro:</label> <input type="text" name="trua" id="crua" size="30"
-                            maxlength="80" placeholder="AV, Rua, Trav..."></p>
+                    <p><label for="crua">Logradouro:</label> <input type="text" name="trua" id="crua" size="25" maxlength="80" placeholder="AV, Rua, Trav..."></p>
                     <p><label for="cnum">Número:</label> <input type="number" name="tnum" id="cnum" min="0"
                             max="999999"></p>
                     <p><label for="cest">Estado:</label>
@@ -243,13 +250,17 @@
                 </fieldset>
                 <fieldset id="pedido">
                     <legend>Quero um Google Glass</legend>
-                    <p><label for="cped">Gostaria de adquirir um Google Glass quando disponível</label></p>
-                    <p><label for="ccor">Cor:</label></p>
-                    <p><label for="cqtd">Quantidade:</label></p>
-                    <p><label for="ctot">Preço Total: R$</label></p>
+                    <p> <input type="checkbox" name="tped" id="cped" checked>
+                        <label for="cped">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                    <p><label for="ccor">Cor:</label>
+                    <input type="color" name="tcor" id="ccor"></p>
+                    <p><label for="cqtd">Quantidade:</label>
+                    <input type="number" name="tqtd" id="cqtd" min="0" max="5" value="0"></p>
+                    <p><label for="ctot">Preço Total: R$</label>
+                    <input type="text" name="ttot" id="ctot" placeholder="Total a Pagar" readonly></p>
                 </fieldset>
 
-                [BOTÃO ENVIAR]
+                <input type="image" src="_imagens/botao-enviar.png"  name="tenviar" id="cenviar">
             </form>
             <footer id="rodape">
                 <p>Copyright &copy; 2013-2020 | Remade by SantiagoIDU! <br>
